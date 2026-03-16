@@ -131,10 +131,15 @@ main {
 
 .form-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 12px;
     margin-top: 16px;
 }
+
+.form-grid button {
+    grid-column: 1 / -1;
+}
+
 
 input, select {
     background: #0d0d14;
@@ -257,3 +262,20 @@ button#add-btn:hover {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 1.6rem;
 }
+
+.card.watchlist { border-top-color: #facc15; }
+.card.watchlist:hover { box-shadow: 0 8px 30px rgba(250,204,21,0.15); }
+.entry-card.watchlist { border-left-color: #facc15; }
+
+.type-badge {
+    font-size: 0.75rem;
+    color: #666;
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+.status.watching { background: #1e3a5f; color: #60a5fa; }
+.status.planned  { background: #2a1a3a; color: #a78bfa; }
+.status.playing  { background: #1a3a2a; color: #34d399; }
+.status.backlog  { background: #2a2a1a; color: #facc15; }
+.status.want     { background: #2a1a3a; color: #a78bfa; }

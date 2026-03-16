@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NerdLog - Manga</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">🎮 NerdLog</a>
+            <p class="tagline">Manga</p>
+        </div>
+    </header>
+    <main>
+        <div class="form-box">
+            <h2 class="section-title">Add Manga</h2>
+            <div class="form-grid">
+                <input type="text" id="title-input" placeholder="Manga title..." />
+                <select id="status-input">
+                    <option value="reading">Reading</option>
+                    <option value="completed">Completed</option>
+                    <option value="want">Want to Read</option>
+                    <option value="dropped">Dropped</option>
+                </select>
+                <select id="rating-input">
+                    <option value="">No rating</option>
+                    <option value="1">⭐ 1</option>
+                    <option value="2">⭐⭐ 2</option>
+                    <option value="3">⭐⭐⭐ 3</option>
+                    <option value="4">⭐⭐⭐⭐ 4</option>
+                    <option value="5">⭐⭐⭐⭐⭐ 5</option>
+                </select>
+                <input type="text" id="notes-input" placeholder="Notes (optional)..." />
+                <button id="add-btn">Add Manga</button>
+            </div>
+        </div>
+        <h2 class="section-title" style="margin-top: 40px;">Your Manga</h2>
+        <div id="entry-list" class="entry-list">
+            <p class="empty-msg">No manga added yet. Add one above!</p>
+        </div>
+    </main>
+    <script src="manga.js"></script>
+</body>
+</html>
