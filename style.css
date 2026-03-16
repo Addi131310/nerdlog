@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0d14;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+}
+
+/* ---- HEADER ---- */
+header {
+    border-bottom: 1px solid #1e1e30;
+    padding: 24px 40px;
+    background: #0d0d14;
+}
+
+.header-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.6rem;
+    color: #a78bfa;
+    letter-spacing: -0.5px;
+}
+
+.tagline {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* ---- MAIN ---- */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.section-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 24px;
+}
+
+/* ---- CARDS ---- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+}
+
+
+.card {
+    background-color: #13131f;
+    border: 1px solid #1e1e30;
+    border-top: 3px solid transparent;
+    border-radius: 14px;
+    padding: 28px 24px;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+/* unique top border color per category */
+.card.books    { border-top-color: #60a5fa; }
+.card.anime    { border-top-color: #f472b6; }
+.card.games    { border-top-color: #34d399; }
+.card.manga    { border-top-color: #fb923c; }
+
+.card.books:hover    { box-shadow: 0 8px 30px rgba(96,165,250,0.15); }
+.card.anime:hover    { box-shadow: 0 8px 30px rgba(244,114,182,0.15); }
+.card.games:hover    { box-shadow: 0 8px 30px rgba(52,211,153,0.15); }
+.card.manga:hover    { box-shadow: 0 8px 30px rgba(251,146,60,0.15); }
+
+.card-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.card h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.card p {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card-arrow {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #333;
+    font-size: 1.1rem;
+    transition: color 0.2s, right 0.2s;
+}
+
+.card:hover .card-arrow {
+    color: #a78bfa;
+    right: 16px;
+}

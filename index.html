@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NerdLog</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-inner">
+            <div class="logo">🎮 NerdLog</div>
+            <p class="tagline">Track everything you love in one place</p>
+        </div>
+    </header>
+
+    <!-- Category Cards -->
+    <main>
+        <h2 class="section-title">Your Collections</h2>
+        <div class="card-grid">
+
+            <div class="card books" onclick="openCategory('books')">
+                <span class="card-icon">📚</span>
+                <h3>Books</h3>
+                <p>Track your reading list</p>
+                <span class="card-arrow">→</span>
+            </div>
+
+            <div class="card anime" onclick="openCategory('anime')">
+                <span class="card-icon">✨</span>
+                <h3>Anime</h3>
+                <p>Track what you're watching</p>
+                <span class="card-arrow">→</span>
+            </div>
+
+            <div class="card games" onclick="openCategory('games')">
+                <span class="card-icon">🎮</span>
+                <h3>Games</h3>
+                <p>Track your backlog</p>
+                <span class="card-arrow">→</span>
+            </div>
+
+            <div class="card manga" onclick="openCategory('manga')">
+                <span class="card-icon">🗾</span>
+                <h3>Manga</h3>
+                <p>Track what you're reading</p>
+                <span class="card-arrow">→</span>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
